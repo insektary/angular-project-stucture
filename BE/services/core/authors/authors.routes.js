@@ -4,7 +4,7 @@ const jsonServer = require('json-server');
 const router = express.Router();
 
 router.use(jsonServer.rewriter({
-	'/authors': '/authors',
+	'/api/authors': '/authors',
 }));
 
 module.exports = router;
